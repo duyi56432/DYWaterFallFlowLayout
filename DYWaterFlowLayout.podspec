@@ -16,7 +16,7 @@ s.license      = "MIT"
 
 s.author             = { "duyi56432" => "564326678@qq.com" }
 s.frameworks   = "Foundation"
-s.platform     = :ios, "8.0"
+s.platform     = :ios, "9.0"
 s.source       = { :git => "https://github.com/duyi56432/DYWaterFlowLayout.git", :tag => "#{s.version}" }
 
 
