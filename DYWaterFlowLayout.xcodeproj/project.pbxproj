@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D4E8F8C26DE20FE00967F94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E8F8B26DE20FE00967F94 /* AppDelegate.m */; };
+		9D4E8F9226DE20FE00967F94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E8F9126DE20FE00967F94 /* ViewController.m */; };
+		9D4E8F9526DE20FE00967F94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4E8F9326DE20FE00967F94 /* Main.storyboard */; };
+		9D4E8F9726DE20FF00967F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4E8F9626DE20FF00967F94 /* Assets.xcassets */; };
+		9D4E8F9A26DE20FF00967F94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4E8F9826DE20FF00967F94 /* LaunchScreen.storyboard */; };
+		9D4E8F9D26DE20FF00967F94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E8F9C26DE20FF00967F94 /* main.m */; };
+		9D4E8FA626DE21A800967F94 /* DYWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E8FA526DE21A800967F94 /* DYWaterFlowLayout.m */; };
+		9D4E8FAF26DE239300967F94 /* DYWaterFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E8FAD26DE239300967F94 /* DYWaterFlowCell.m */; };
+		9D4E8FB026DE239300967F94 /* DYWaterFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D4E8FAE26DE239300967F94 /* DYWaterFlowCell.xib */; };
+		9D4E8FB726DE247300967F94 /* DYWaterFlowHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4E8FB526DE247300967F94 /* DYWaterFlowHeader.m */; };
+		9D4E8FB826DE247300967F94 /* DYWaterFlowHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D4E8FB626DE247300967F94 /* DYWaterFlowHeader.xib */; };
+		AF73F1AA7E996F6BAF9C3AD7 /* libPods-DYWaterFlowLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF080B0A31C62C3776D3DB24 /* libPods-DYWaterFlowLayout.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D4E8F8726DE20FE00967F94 /* DYWaterFlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYWaterFlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4E8F8A26DE20FE00967F94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9D4E8F8B26DE20FE00967F94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9D4E8F9026DE20FE00967F94 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9D4E8F9126DE20FE00967F94 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9D4E8F9426DE20FE00967F94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D4E8F9626DE20FF00967F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D4E8F9926DE20FF00967F94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D4E8F9B26DE20FF00967F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D4E8F9C26DE20FF00967F94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D4E8FA426DE21A800967F94 /* DYWaterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYWaterFlowLayout.h; sourceTree = "<group>"; };
+		9D4E8FA526DE21A800967F94 /* DYWaterFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYWaterFlowLayout.m; sourceTree = "<group>"; };
+		9D4E8FAC26DE239300967F94 /* DYWaterFlowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYWaterFlowCell.h; sourceTree = "<group>"; };
+		9D4E8FAD26DE239300967F94 /* DYWaterFlowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYWaterFlowCell.m; sourceTree = "<group>"; };
+		9D4E8FAE26DE239300967F94 /* DYWaterFlowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYWaterFlowCell.xib; sourceTree = "<group>"; };
+		9D4E8FB426DE247300967F94 /* DYWaterFlowHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYWaterFlowHeader.h; sourceTree = "<group>"; };
+		9D4E8FB526DE247300967F94 /* DYWaterFlowHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYWaterFlowHeader.m; sourceTree = "<group>"; };
+		9D4E8FB626DE247300967F94 /* DYWaterFlowHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYWaterFlowHeader.xib; sourceTree = "<group>"; };
+		AF080B0A31C62C3776D3DB24 /* libPods-DYWaterFlowLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYWaterFlowLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C541485F55D326BC6C7FEF56 /* Pods-DYWaterFlowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYWaterFlowLayout.release.xcconfig"; path = "Target Support Files/Pods-DYWaterFlowLayout/Pods-DYWaterFlowLayout.release.xcconfig"; sourceTree = "<group>"; };
+		E274FDB14F4B0DD0FE3BEAB3 /* Pods-DYWaterFlowLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYWaterFlowLayout.debug.xcconfig"; path = "Target Support Files/Pods-DYWaterFlowLayout/Pods-DYWaterFlowLayout.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D4E8F8426DE20FE00967F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF73F1AA7E996F6BAF9C3AD7 /* libPods-DYWaterFlowLayout.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F55F45994310B0044930671 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF080B0A31C62C3776D3DB24 /* libPods-DYWaterFlowLayout.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D4E8F7E26DE20FE00967F94 = {
+			isa = PBXGroup;
+			children = (
+				9D4E8F8926DE20FE00967F94 /* DYWaterFlowLayout */,
+				9D4E8F8826DE20FE00967F94 /* Products */,
+				A6F8B6EF84068234025AB5B2 /* Pods */,
+				0F55F45994310B0044930671 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9D4E8F8826DE20FE00967F94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D4E8F8726DE20FE00967F94 /* DYWaterFlowLayout.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D4E8F8926DE20FE00967F94 /* DYWaterFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				9D4E8FA326DE215100967F94 /* DYWaterFlowLayout */,
+				9D4E8F8A26DE20FE00967F94 /* AppDelegate.h */,
+				9D4E8F8B26DE20FE00967F94 /* AppDelegate.m */,
+				9D4E8F9026DE20FE00967F94 /* ViewController.h */,
+				9D4E8F9126DE20FE00967F94 /* ViewController.m */,
+				9D4E8F9326DE20FE00967F94 /* Main.storyboard */,
+				9D4E8F9626DE20FF00967F94 /* Assets.xcassets */,
+				9D4E8F9826DE20FF00967F94 /* LaunchScreen.storyboard */,
+				9D4E8F9B26DE20FF00967F94 /* Info.plist */,
+				9D4E8F9C26DE20FF00967F94 /* main.m */,
+				9D4E8FAC26DE239300967F94 /* DYWaterFlowCell.h */,
+				9D4E8FAD26DE239300967F94 /* DYWaterFlowCell.m */,
+				9D4E8FAE26DE239300967F94 /* DYWaterFlowCell.xib */,
+				9D4E8FB426DE247300967F94 /* DYWaterFlowHeader.h */,
+				9D4E8FB526DE247300967F94 /* DYWaterFlowHeader.m */,
+				9D4E8FB626DE247300967F94 /* DYWaterFlowHeader.xib */,
+			);
+			path = DYWaterFlowLayout;
+			sourceTree = "<group>";
+		};
+		9D4E8FA326DE215100967F94 /* DYWaterFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				9D4E8FA426DE21A800967F94 /* DYWaterFlowLayout.h */,
+				9D4E8FA526DE21A800967F94 /* DYWaterFlowLayout.m */,
+			);
+			path = DYWaterFlowLayout;
+			sourceTree = "<group>";
+		};
+		A6F8B6EF84068234025AB5B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E274FDB14F4B0DD0FE3BEAB3 /* Pods-DYWaterFlowLayout.debug.xcconfig */,
+				C541485F55D326BC6C7FEF56 /* Pods-DYWaterFlowLayout.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D4E8F8626DE20FE00967F94 /* DYWaterFlowLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D4E8FA026DE20FF00967F94 /* Build configuration list for PBXNativeTarget "DYWaterFlowLayout" */;
+			buildPhases = (
+				0555983B41AEC2D15F240512 /* [CP] Check Pods Manifest.lock */,
+				9D4E8F8326DE20FE00967F94 /* Sources */,
+				9D4E8F8426DE20FE00967F94 /* Frameworks */,
+				9D4E8F8526DE20FE00967F94 /* Resources */,
+				8A8A34CB3DD92C4AFD9E1DB5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYWaterFlowLayout;
+			productName = DYWaterFlowLayout;
+			productReference = 9D4E8F8726DE20FE00967F94 /* DYWaterFlowLayout.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D4E8F7F26DE20FE00967F94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9D4E8F8626DE20FE00967F94 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 9D4E8F8226DE20FE00967F94 /* Build configuration list for PBXProject "DYWaterFlowLayout" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D4E8F7E26DE20FE00967F94;
+			productRefGroup = 9D4E8F8826DE20FE00967F94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D4E8F8626DE20FE00967F94 /* DYWaterFlowLayout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D4E8F8526DE20FE00967F94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4E8FB026DE239300967F94 /* DYWaterFlowCell.xib in Resources */,
+				9D4E8F9A26DE20FF00967F94 /* LaunchScreen.storyboard in Resources */,
+				9D4E8F9726DE20FF00967F94 /* Assets.xcassets in Resources */,
+				9D4E8FB826DE247300967F94 /* DYWaterFlowHeader.xib in Resources */,
+				9D4E8F9526DE20FE00967F94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0555983B41AEC2D15F240512 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DYWaterFlowLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A8A34CB3DD92C4AFD9E1DB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DYWaterFlowLayout/Pods-DYWaterFlowLayout-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DYWaterFlowLayout/Pods-DYWaterFlowLayout-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DYWaterFlowLayout/Pods-DYWaterFlowLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D4E8F8326DE20FE00967F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4E8FA626DE21A800967F94 /* DYWaterFlowLayout.m in Sources */,
+				9D4E8F9226DE20FE00967F94 /* ViewController.m in Sources */,
+				9D4E8FAF26DE239300967F94 /* DYWaterFlowCell.m in Sources */,
+				9D4E8F8C26DE20FE00967F94 /* AppDelegate.m in Sources */,
+				9D4E8F9D26DE20FF00967F94 /* main.m in Sources */,
+				9D4E8FB726DE247300967F94 /* DYWaterFlowHeader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D4E8F9326DE20FE00967F94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D4E8F9426DE20FE00967F94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D4E8F9826DE20FF00967F94 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D4E8F9926DE20FF00967F94 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D4E8F9E26DE20FF00967F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D4E8F9F26DE20FF00967F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D4E8FA126DE20FF00967F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E274FDB14F4B0DD0FE3BEAB3 /* Pods-DYWaterFlowLayout.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2KVK68S94;
+				INFOPLIST_FILE = DYWaterFlowLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dy.DYWaterFlowLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D4E8FA226DE20FF00967F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C541485F55D326BC6C7FEF56 /* Pods-DYWaterFlowLayout.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2KVK68S94;
+				INFOPLIST_FILE = DYWaterFlowLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dy.DYWaterFlowLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D4E8F8226DE20FE00967F94 /* Build configuration list for PBXProject "DYWaterFlowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4E8F9E26DE20FF00967F94 /* Debug */,
+				9D4E8F9F26DE20FF00967F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D4E8FA026DE20FF00967F94 /* Build configuration list for PBXNativeTarget "DYWaterFlowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4E8FA126DE20FF00967F94 /* Debug */,
+				9D4E8FA226DE20FF00967F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D4E8F7F26DE20FE00967F94 /* Project object */;
+}
