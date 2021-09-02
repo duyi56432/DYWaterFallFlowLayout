@@ -20,7 +20,7 @@ s.platform     = :ios, "9.0"
 s.source       = { :git => "https://github.com/duyi56432/DYWaterFallFlowLayout.git", :tag => "#{s.version}" }
 
 
-s.source_files  = "DYWaterFallFlowLayout"
+s.source_files = "DYWaterFallFlowLayout"
 
 
 end
