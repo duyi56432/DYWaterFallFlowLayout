@@ -37,7 +37,7 @@
 		9D166FA726DF7B440029E538 /* DYWaterFlowHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D166F8A26DF7B430029E538 /* DYWaterFlowHeader.m */; };
 		9D166FA826DF7B440029E538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D166F8C26DF7B430029E538 /* AppDelegate.m */; };
 		9D166FA926DF7B440029E538 /* DYWaterFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D166F8F26DF7B440029E538 /* DYWaterFlowCell.m */; };
-		9D166FAD26DF7B980029E538 /* DYWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D166FAB26DF7B980029E538 /* DYWaterFlowLayout.m */; };
+		9D824DBE26E069F20097CD7E /* DYWaterFallFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D824DBD26E069F20097CD7E /* DYWaterFallFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,8 +97,8 @@
 		9D166F8D26DF7B430029E538 /* DYWaterFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYWaterFlowCell.h; sourceTree = "<group>"; };
 		9D166F8E26DF7B440029E538 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D166F8F26DF7B440029E538 /* DYWaterFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYWaterFlowCell.m; sourceTree = "<group>"; };
-		9D166FAB26DF7B980029E538 /* DYWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYWaterFlowLayout.m; sourceTree = "<group>"; };
-		9D166FAC26DF7B980029E538 /* DYWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYWaterFlowLayout.h; sourceTree = "<group>"; };
+		9D824DBC26E069F20097CD7E /* DYWaterFallFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYWaterFallFlowLayout.h; sourceTree = "<group>"; };
+		9D824DBD26E069F20097CD7E /* DYWaterFallFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYWaterFallFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 		9D166F3D26DF7B000029E538 /* DYWaterFlowLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9D166FAA26DF7B980029E538 /* DYWaterFlowLayout */,
+				9D824DBB26E069F20097CD7E /* DYWaterFallFlowLayout */,
 				9D166F8E26DF7B440029E538 /* AppDelegate.h */,
 				9D166F8C26DF7B430029E538 /* AppDelegate.m */,
 				9D166F8D26DF7B430029E538 /* DYWaterFlowCell.h */,
@@ -247,13 +247,13 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		9D166FAA26DF7B980029E538 /* DYWaterFlowLayout */ = {
+		9D824DBB26E069F20097CD7E /* DYWaterFallFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				9D166FAB26DF7B980029E538 /* DYWaterFlowLayout.m */,
-				9D166FAC26DF7B980029E538 /* DYWaterFlowLayout.h */,
+				9D824DBC26E069F20097CD7E /* DYWaterFallFlowLayout.h */,
+				9D824DBD26E069F20097CD7E /* DYWaterFallFlowLayout.m */,
 			);
-			path = DYWaterFlowLayout;
+			path = DYWaterFallFlowLayout;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -332,6 +332,7 @@
 				9D166FA626DF7B440029E538 /* ViewController.m in Sources */,
 				9D166F9826DF7B440029E538 /* MJRefreshBackGifFooter.m in Sources */,
 				9D166FA126DF7B440029E538 /* MJRefreshFooter.m in Sources */,
+				9D824DBE26E069F20097CD7E /* DYWaterFallFlowLayout.m in Sources */,
 				9D166F9C26DF7B440029E538 /* MJRefreshAutoGifFooter.m in Sources */,
 				9D166F9526DF7B440029E538 /* UIScrollView+MJExtension.m in Sources */,
 				9D166FA026DF7B440029E538 /* MJRefreshGifHeader.m in Sources */,
@@ -347,7 +348,6 @@
 				9D166FA526DF7B440029E538 /* MJRefreshComponent.m in Sources */,
 				9D166F9926DF7B440029E538 /* MJRefreshBackStateFooter.m in Sources */,
 				9D166FA226DF7B440029E538 /* MJRefreshHeader.m in Sources */,
-				9D166FAD26DF7B980029E538 /* DYWaterFlowLayout.m in Sources */,
 				9D166F9F26DF7B440029E538 /* MJRefreshStateHeader.m in Sources */,
 				9D166F5126DF7B010029E538 /* main.m in Sources */,
 				9D166F9A26DF7B440029E538 /* MJRefreshBackNormalFooter.m in Sources */,

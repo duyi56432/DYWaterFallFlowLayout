@@ -22,9 +22,7 @@ pod 'DYWaterFlowLayout'
 持续优化中，如果有好的建议和意见欢迎交流，QQ:564326678
 ## 用法
 <pre><code> 
-
-与UICollectionViewFlowLayout用法一致。
-
+与 UICollectionViewFlowLayout 用法一致。
 </code></pre>
 
 ## 版本更新

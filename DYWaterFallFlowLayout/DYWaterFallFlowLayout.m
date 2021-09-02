@@ -5,7 +5,7 @@
 //  Created by duyi on 2021/8/31.
 //
 
-#import "DYWaterFlowLayout.h"
+#import "DYWaterFallFlowLayout.h"
 
 @implementation DYFlowLayoutModel
 
@@ -25,7 +25,7 @@
 
 @end
 
-@interface DYWaterFlowLayout()
+@interface DYWaterFallFlowLayout()
 
 @property (nonatomic, strong) NSMutableArray *sectionArray;
 
@@ -35,7 +35,7 @@
 
 @end
 
-@implementation DYWaterFlowLayout
+@implementation DYWaterFallFlowLayout
 
 #pragma mark - 初始化
 

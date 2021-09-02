@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface DYWaterFlowLayout : UICollectionViewFlowLayout
+@interface DYWaterFallFlowLayout : UICollectionViewFlowLayout
 
 @end
 

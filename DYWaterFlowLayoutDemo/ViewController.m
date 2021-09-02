@@ -7,7 +7,7 @@
 
 #import "ViewController.h"
 #import "MJRefresh.h"
-#import "DYWaterFlowLayout.h"
+#import "DYWaterFallFlowLayout.h"
 #import "DYWaterFlowCell.h"
 #import "DYWaterFlowHeader.h"
 
@@ -53,7 +53,7 @@
 
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
-        DYWaterFlowLayout *layout = [[DYWaterFlowLayout alloc] init];
+        DYWaterFallFlowLayout *layout = [[DYWaterFallFlowLayout alloc] init];
         layout.sectionInset = UIEdgeInsetsMake(5, 0, 5, 0);
         CGRect rect = self.view.bounds;
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, kNavigation_height, rect.size.width, rect.size.height - kNavigation_height) collectionViewLayout:layout];
