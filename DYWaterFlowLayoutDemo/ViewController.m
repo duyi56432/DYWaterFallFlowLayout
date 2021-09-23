@@ -54,9 +54,10 @@
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         DYWaterFallFlowLayout *layout = [[DYWaterFallFlowLayout alloc] init];
-        layout.sectionInset = UIEdgeInsetsMake(5, 0, 5, 0);
+        layout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
+//        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         CGRect rect = self.view.bounds;
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, kNavigation_height, rect.size.width, rect.size.height - kNavigation_height) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, kNavigation_height, rect.size.width, self.view.frame.size.height - kNavigation_height) collectionViewLayout:layout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         _collectionView.backgroundColor = [UIColor groupTableViewBackgroundColor];
@@ -68,6 +69,9 @@
         __weak typeof(self) weakSelf = self;
         _collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [weakSelf.collectionView.mj_header endRefreshing];
+            if (layout.scrollDirection == UICollectionViewScrollDirectionHorizontal) {
+                return;
+            }
             [weakSelf.heightArray removeAllObjects];
             for (int i = 0; i < 10; i++) {
                 [weakSelf.heightArray addObject:@(arc4random() % 9 * 10 + 10)];
@@ -76,6 +80,9 @@
         }];
         _collectionView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
             [weakSelf.collectionView.mj_footer endRefreshing];
+            if (layout.scrollDirection == UICollectionViewScrollDirectionHorizontal) {
+                return;
+            }
             for (int i = 0; i < 10; i++) {
                 [weakSelf.heightArray addObject:@(arc4random() % 9 * 10 + 10)];
             }
@@ -112,7 +119,6 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     DYWaterFlowHeader *view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DYWaterFlowHeader" forIndexPath:indexPath];
     view.titleLabel.text = @[@"分组1",@"分组2",@"分组3"][indexPath.section];
-    view.markLabel.text = @[@"纵向瀑布流",@"横向瀑布流",@"纵向瀑布流上拉加载更多"][indexPath.section];
     view.layer.cornerRadius = 5;
     return view;
 }
@@ -131,12 +137,12 @@
     } else if (indexPath.section == 1) {
         return CGSizeMake([self.section0Array[indexPath.row] doubleValue], 50);
     } else {
-        return CGSizeMake(50,[self.heightArray[indexPath.row] doubleValue]);
+        return CGSizeMake(170,[self.heightArray[indexPath.row] doubleValue]);
     }
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
-    return CGSizeMake(0, 50);
+    return CGSizeMake(50, 50);
 }
 
 @end

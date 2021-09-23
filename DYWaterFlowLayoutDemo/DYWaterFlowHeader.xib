@@ -15,28 +15,19 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-Cf-Ti0">
-                    <rect key="frame" x="15" y="15" width="43.5" height="21"/>
+                    <rect key="frame" x="138.5" y="14.5" width="43.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnw-lz-6ba">
-                    <rect key="frame" x="63.5" y="19" width="35.5" height="17"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" red="0.4444795724708685" green="0.46320346269481527" blue="0.45882324466398117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="9Gg-ye-v9C"/>
             <color key="backgroundColor" red="0.19436884201648191" green="0.48524083680947272" blue="0.93526912156981656" alpha="0.46376148754397767" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="fcP-Cf-Ti0" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="15" id="0Sk-Fw-SMg"/>
-                <constraint firstItem="wnw-lz-6ba" firstAttribute="leading" secondItem="fcP-Cf-Ti0" secondAttribute="trailing" constant="5" id="EBT-x4-RWS"/>
-                <constraint firstItem="wnw-lz-6ba" firstAttribute="bottom" secondItem="fcP-Cf-Ti0" secondAttribute="bottom" id="Q1J-bN-LwL"/>
-                <constraint firstItem="fcP-Cf-Ti0" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="15" id="gx8-4q-kVV"/>
+                <constraint firstItem="fcP-Cf-Ti0" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="YoG-90-Sfd"/>
+                <constraint firstItem="fcP-Cf-Ti0" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="bUo-v3-a1r"/>
             </constraints>
             <connections>
-                <outlet property="markLabel" destination="wnw-lz-6ba" id="KzZ-8f-xpp"/>
                 <outlet property="titleLabel" destination="fcP-Cf-Ti0" id="pQD-iv-sx9"/>
             </connections>
             <point key="canvasLocation" x="62" y="109"/>

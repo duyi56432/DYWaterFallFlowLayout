@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否是纵向瀑布流
 @property (nonatomic, assign) BOOL isFallHeight;
 
-@property (nonatomic, strong) NSMutableArray *rowHeightArray;
+@property (nonatomic, strong) NSMutableArray *rowFallArray;
 
 /// 计算后的layout数组
 @property (nonatomic, strong) NSMutableArray *cellFrameArray;
@@ -34,9 +34,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) CGFloat lineSpace;
 
-/// 列数，只针对等宽的分组，不等宽无意义
-@property (nonatomic, assign) NSInteger numOfRow;
-
 @property (nonatomic, assign) CGFloat maxY;
 
 @property (nonatomic, assign) CGFloat maxX;
@@ -44,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface DYWaterFallFlowLayout : UICollectionViewFlowLayout
+
+@property (nonatomic, copy) void (^sizeUpdatedBlock)(CGSize size);
 
 @end
 

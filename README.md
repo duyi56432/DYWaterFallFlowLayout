@@ -9,7 +9,8 @@
 
 2.使用简单，实现原生flowLayout的代理就行，无多余代码。
 
-![dicImg](https://github.com/duyi56432/DYWaterFallFlowLayout/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE.png)  
+![dicImg](https://github.com/duyi56432/DYWaterFallFlowLayout/blob/main/效果图_纵向.png)  
+![dicImg](https://github.com/duyi56432/DYWaterFallFlowLayout/blob/main/效果图_横向.png)
 
 ## 安装
 
@@ -17,7 +18,7 @@
 <pre><code> 
 pod 'DYWaterFallFlowLayout'
 </code></pre>
-当前最新版本1.0，如果不能搜索最新版本，执行命令 pod setup更新pod后再试。
+当前最新版本1.1.0，如果不能搜索最新版本，执行命令 pod setup更新pod后再试。
 
 持续优化中，如果有好的建议和意见欢迎交流，QQ:564326678
 ## 用法
@@ -26,4 +27,5 @@ pod 'DYWaterFallFlowLayout'
 </code></pre>
 
 ## 版本更新
-
+【更新版本】v1.1.0
+【更新内容】添加横向瀑布流。

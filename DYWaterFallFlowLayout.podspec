@@ -3,11 +3,11 @@ Pod::Spec.new do |s|
 
 
 s.name         = "DYWaterFallFlowLayout"
-s.version      = "1.0.0"
+s.version      = "1.1.0"
 s.summary      = "可设置不同分组等高或等宽的瀑布流。"
 
 s.description  = <<-DESC
-可以设置不同分组等高或等宽的瀑布流。
+可以设置不同分组等高或等宽的瀑布流，支持横向、纵向。
 DESC
 
 s.homepage     = "https://github.com/duyi56432/DYWaterFallFlowLayout"
