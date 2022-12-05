@@ -7,12 +7,17 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, FlowLayoutMode) {
+    FlowLayoutModeDefalt, //默认模式
+    FlowLayoutModeFall //瀑布流
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DYFlowLayoutModel : NSObject
 
-/// 是否是纵向瀑布流
-@property (nonatomic, assign) BOOL isFallHeight;
+/// 模式
+@property (nonatomic, assign) FlowLayoutMode layoutMode;
 
 @property (nonatomic, strong) NSMutableArray *rowFallArray;
 
@@ -38,11 +43,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) CGFloat maxX;
 
+@property (nonatomic, assign) CGFloat pageX;
+
+@property (nonatomic, assign) UIEdgeInsets insets;
+
 @end
 
 @interface DYWaterFallFlowLayout : UICollectionViewFlowLayout
 
 @property (nonatomic, copy) void (^sizeUpdatedBlock)(CGSize size);
+
+///分页模式返回当前页码（从0开始）
+@property (nonatomic, copy) void (^pageDidChangeBlock)(NSInteger page);
+
+///开启横向分页模式
+@property (nonatomic, assign) BOOL isPage;
 
 @end
 
