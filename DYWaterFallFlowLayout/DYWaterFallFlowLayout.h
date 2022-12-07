@@ -14,6 +14,20 @@ typedef NS_ENUM(NSInteger, FlowLayoutMode) {
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+@interface DYWaterFallFlowLayout : UICollectionViewFlowLayout
+
+///contentSize更新
+@property (nonatomic, copy) void (^sizeUpdatedBlock)(CGSize size);
+
+///分页模式返回当前页码（从0开始）
+@property (nonatomic, copy) void (^pageDidChangeBlock)(NSInteger page);
+
+///开启横向分页模式
+@property (nonatomic, assign) BOOL isPage;
+
+@end
+
 @interface DYFlowLayoutModel : NSObject
 
 /// 模式
@@ -46,18 +60,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat pageX;
 
 @property (nonatomic, assign) UIEdgeInsets insets;
-
-@end
-
-@interface DYWaterFallFlowLayout : UICollectionViewFlowLayout
-
-@property (nonatomic, copy) void (^sizeUpdatedBlock)(CGSize size);
-
-///分页模式返回当前页码（从0开始）
-@property (nonatomic, copy) void (^pageDidChangeBlock)(NSInteger page);
-
-///开启横向分页模式
-@property (nonatomic, assign) BOOL isPage;
 
 @end
 

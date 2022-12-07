@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89F3908A293F133B00D6425C /* WaterFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F39089293F133B00D6425C /* WaterFlowViewController.m */; };
+		89F39090293F1A6D00D6425C /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F3908F293F1A6D00D6425C /* PageViewController.m */; };
 		9D166F4926DF7B000029E538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D166F4726DF7B000029E538 /* Main.storyboard */; };
 		9D166F4B26DF7B010029E538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D166F4A26DF7B010029E538 /* Assets.xcassets */; };
 		9D166F4E26DF7B010029E538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D166F4C26DF7B010029E538 /* LaunchScreen.storyboard */; };
@@ -41,6 +43,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89F39088293F133B00D6425C /* WaterFlowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFlowViewController.h; sourceTree = "<group>"; };
+		89F39089293F133B00D6425C /* WaterFlowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowViewController.m; sourceTree = "<group>"; };
+		89F3908B293F13C600D6425C /* Const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		89F3908E293F1A6D00D6425C /* PageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		89F3908F293F1A6D00D6425C /* PageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		9D166F3B26DF7B000029E538 /* DYWaterFlowLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYWaterFlowLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D166F4826DF7B000029E538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D166F4A26DF7B010029E538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +119,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89F3908C293F140B00D6425C /* WaterFallDemo */ = {
+			isa = PBXGroup;
+			children = (
+				89F39088293F133B00D6425C /* WaterFlowViewController.h */,
+				89F39089293F133B00D6425C /* WaterFlowViewController.m */,
+				9D166F8D26DF7B430029E538 /* DYWaterFlowCell.h */,
+				9D166F8F26DF7B440029E538 /* DYWaterFlowCell.m */,
+				9D166F5726DF7B430029E538 /* DYWaterFlowCell.xib */,
+				9D166F8B26DF7B430029E538 /* DYWaterFlowHeader.h */,
+				9D166F8A26DF7B430029E538 /* DYWaterFlowHeader.m */,
+				9D166F5826DF7B430029E538 /* DYWaterFlowHeader.xib */,
+			);
+			path = WaterFallDemo;
+			sourceTree = "<group>";
+		};
+		89F3908D293F1A5600D6425C /* PageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				89F3908E293F1A6D00D6425C /* PageViewController.h */,
+				89F3908F293F1A6D00D6425C /* PageViewController.m */,
+			);
+			path = PageDemo;
+			sourceTree = "<group>";
+		};
 		9D166F3226DF7B000029E538 = {
 			isa = PBXGroup;
 			children = (
@@ -131,15 +162,11 @@
 		9D166F3D26DF7B000029E538 /* DYWaterFlowLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
+				89F3908D293F1A5600D6425C /* PageDemo */,
+				89F3908C293F140B00D6425C /* WaterFallDemo */,
 				9D824DBB26E069F20097CD7E /* DYWaterFallFlowLayout */,
 				9D166F8E26DF7B440029E538 /* AppDelegate.h */,
 				9D166F8C26DF7B430029E538 /* AppDelegate.m */,
-				9D166F8D26DF7B430029E538 /* DYWaterFlowCell.h */,
-				9D166F8F26DF7B440029E538 /* DYWaterFlowCell.m */,
-				9D166F5726DF7B430029E538 /* DYWaterFlowCell.xib */,
-				9D166F8B26DF7B430029E538 /* DYWaterFlowHeader.h */,
-				9D166F8A26DF7B430029E538 /* DYWaterFlowHeader.m */,
-				9D166F5826DF7B430029E538 /* DYWaterFlowHeader.xib */,
 				9D166F5926DF7B430029E538 /* MJRefresh */,
 				9D166F8826DF7B430029E538 /* ViewController.h */,
 				9D166F8926DF7B430029E538 /* ViewController.m */,
@@ -148,6 +175,7 @@
 				9D166F4C26DF7B010029E538 /* LaunchScreen.storyboard */,
 				9D166F4F26DF7B010029E538 /* Info.plist */,
 				9D166F5026DF7B010029E538 /* main.m */,
+				89F3908B293F13C600D6425C /* Const.h */,
 			);
 			path = DYWaterFlowLayoutDemo;
 			sourceTree = "<group>";
@@ -332,12 +360,14 @@
 				9D166FA626DF7B440029E538 /* ViewController.m in Sources */,
 				9D166F9826DF7B440029E538 /* MJRefreshBackGifFooter.m in Sources */,
 				9D166FA126DF7B440029E538 /* MJRefreshFooter.m in Sources */,
+				89F3908A293F133B00D6425C /* WaterFlowViewController.m in Sources */,
 				9D824DBE26E069F20097CD7E /* DYWaterFallFlowLayout.m in Sources */,
 				9D166F9C26DF7B440029E538 /* MJRefreshAutoGifFooter.m in Sources */,
 				9D166F9526DF7B440029E538 /* UIScrollView+MJExtension.m in Sources */,
 				9D166FA026DF7B440029E538 /* MJRefreshGifHeader.m in Sources */,
 				9D166F9E26DF7B440029E538 /* MJRefreshNormalHeader.m in Sources */,
 				9D166FA326DF7B440029E538 /* MJRefreshBackFooter.m in Sources */,
+				89F39090293F1A6D00D6425C /* PageViewController.m in Sources */,
 				9D166F9B26DF7B440029E538 /* MJRefreshAutoStateFooter.m in Sources */,
 				9D166FA426DF7B440029E538 /* MJRefreshAutoFooter.m in Sources */,
 				9D166F9726DF7B440029E538 /* UIView+MJExtension.m in Sources */,

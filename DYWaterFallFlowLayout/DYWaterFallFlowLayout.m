@@ -430,7 +430,7 @@
 
         CGFloat height = self.collectionView.frame.size.height - model.insets.top - self.collectionView.contentInset.bottom - self.collectionView.contentInset.top;
         
-        if (model.maxX + nextAttr.frame.size.width + model.itemSpace > self.collectionView.frame.size.width * self.pageNum) {
+        if (model.maxX + nextAttr.frame.size.width + model.itemSpace + self.collectionView.contentInset.right + model.insets.right > self.collectionView.frame.size.width * self.pageNum) {
             model.maxY = currentAttr.frame.origin.y + currentAttr.frame.size.height + model.lineSpace;
             CGFloat nextY = model.maxY + nextAttr.frame.size.height + model.lineSpace;
             
@@ -446,22 +446,23 @@
 }
 
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity {
+    
     if (!self.isPage) {
-        return  proposedContentOffset;
+        return proposedContentOffset;
     }
-    if (self.collectionView.decelerating == NO) {
-        CGFloat currentOffsetx = self.collectionView.bounds.size.width * self.currentPage;
-        if (proposedContentOffset.x > currentOffsetx) {
-            if (self.currentPage < self.pageNum) {
-                self.currentPage += 1;
-            }
-        } else if (proposedContentOffset.x < currentOffsetx) {
-            if (self.currentPage > 0) {
-                self.currentPage -= 1;
-            }
+
+    CGFloat currentOffsetx = self.collectionView.bounds.size.width * self.currentPage;
+    if (proposedContentOffset.x > currentOffsetx) {
+        if (self.currentPage < self.pageNum) {
+            self.currentPage += 1;
+        }
+    } else if (proposedContentOffset.x < currentOffsetx) {
+        if (self.currentPage > 0) {
+            self.currentPage -= 1;
         }
     }
-    CGPoint point = CGPointMake(self.collectionView.bounds.size.width * self.currentPage, 0);
+    CGFloat pointx = self.currentPage > 0 ? (self.collectionView.bounds.size.width * self.currentPage) : -self.collectionView.contentInset.left;
+    CGPoint point = CGPointMake(pointx, 0);
     if (self.pageDidChangeBlock) {
         self.pageDidChangeBlock(self.currentPage);
     }
