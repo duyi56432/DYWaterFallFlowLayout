@@ -37,7 +37,6 @@
     if (!_collectionView) {
         DYWaterFallFlowLayout *layout = [[DYWaterFallFlowLayout alloc] init];
         layout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
-//        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         CGRect rect = self.view.bounds;
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, kNavigation_height, rect.size.width, self.view.frame.size.height - kNavigation_height) collectionViewLayout:layout];
         _collectionView.delegate = self;
